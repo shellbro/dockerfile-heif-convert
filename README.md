@@ -1,6 +1,6 @@
 # shellbro/heif-convert
 
-Convert all HEIF images (*.heic) from `/input` dir to JPG (*.jpg) images saved
+Convert all HEIF images (*.heic) from `/input` dir to JPEG (*.jpg) images saved
 to `/output` dir.
 
 ```
