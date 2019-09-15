@@ -9,6 +9,6 @@ Just run:
 
 ```
 docker run --rm \
--v /some/host/path/input:/input -v /some/host/path/output:output \
+-v /some/host/path/input:/input -v /some/host/path/output:/output \
 shellbro/heif-convert
 ```
