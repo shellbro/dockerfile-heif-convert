@@ -10,7 +10,5 @@ images saved to `/output` dir.
 Just run:
 
 ```
-docker run --rm \
--v /some/host/path/input:/input -v /some/host/path/output:/output \
-shellbro/heif-convert
+$ docker run --rm -v /some/host/path/input:/input -v /some/host/path/output:/output shellbro/heif-convert
 ```
