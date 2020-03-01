@@ -5,8 +5,8 @@ RUN apt-get update && apt-get install -y libheif-examples &&\
     >&2 bash -c 'dpkg -s libheif-examples | grep Version | cut -d " " -f 2' &&\
     useradd non-root
 
-USER non-root
-
 COPY convert-all /usr/local/bin/convert-all
+
+USER non-root
 
 ENTRYPOINT ["/usr/local/bin/convert-all"]
