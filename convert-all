@@ -8,5 +8,5 @@ cd /input
 
 for file in *.heic
 do
-  /usr/bin/heif-convert -q 100 "$file" "/output/${file%.heic}.jpg"
+  heif-convert -q 100 "$file" "/output/${file%.heic}.jpg"
 done
