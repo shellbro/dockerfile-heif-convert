@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker build --pull -t localhost:5000/shellbro/heif-convert:latest "$@" .
+docker build --pull --no-cache\
+       -t localhost:5000/shellbro/heif-convert:latest "$@" .
