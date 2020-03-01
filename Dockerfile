@@ -1,10 +1,11 @@
 FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y libheif-examples &&\
-    rm -rf /var/lib/apt/lists/* && mkdir /input /output &&\
-    useradd -ms /bin/bash user && chown user:user /input /output
+    rm -rf /var/lib/apt/lists/* && >&2 echo -n 'Version: ' &&\
+    >&2 bash -c 'dpkg -s libheif-examples | grep Version | cut -d " " -f 2' &&\
+    useradd non-root
 
-USER user
+USER non-root
 
 COPY convert-all /usr/local/bin/convert-all
 
