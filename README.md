@@ -5,7 +5,7 @@
 Convert all HEIF images (&ast;.heic) from `/input` dir to JPEG (&ast;.jpg)
 images saved to `/output` dir.
 
-# Usage
+## Usage
 
 Just run:
 
